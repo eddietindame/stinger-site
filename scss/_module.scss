@@ -1,0 +1,212 @@
+.header {
+    position: fixed;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background-color: rgba(0,0,0,0.5);
+    height: 60px;
+    width: 100%;
+    z-index: 10;
+    nav {
+        float: right;
+//        vertical-align: middle;
+    }
+    ul {
+        padding: 0 1em 0 0;
+        margin: auto;
+        @include vertical-align();
+    }
+    li {
+        display: inline;
+        list-style: none;
+        margin: 0 1em;
+    }
+    a {
+        color: $off-white;
+        text-decoration: none;
+        
+    }
+    .logo {
+        width: 50px;
+        padding: 0 0 0 1em;
+        float: left;
+        fill: $top;
+        @include vertical-align();
+    }
+}
+
+.top {
+//    background: #7cffb3;
+    background: $top;
+    .hero {
+        float: right;
+        width: 400px;
+        position: relative;
+        bottom: -60px;
+        right: -60px;
+//        width:45%;
+    }
+    .content {
+        float: left;
+//        width: 45%;
+        width: 560px;
+        height: 100%;
+        text-align: justify;
+    }
+}
+
+.video {
+//    background: #313131;
+    background: $video;
+//    z-index: 4;
+    .video-header {
+        color: $off-white;
+        margin-top: 0;
+    }
+    video {
+        width: 100%;
+        border-radius: 0.5em;
+        background: $contact url('../res/person-circle.svg') no-repeat;
+        background-position: center center;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.info {
+//    background: #52a7fc;
+    background: $info;
+}
+
+.features {
+//    background: #4de57c;
+    background: $features;
+    color: $off-white;
+    text-align: justify;
+    svg {
+        fill: $off-white;
+    }
+    h1 {
+//        justify-content: center;
+        text-align: center;
+    }
+    figcaption {
+        font-size: 1.4em;
+    }
+}
+
+.contact {
+//    background: skyblue;
+    background: $contact;
+    text-align: center;
+    h1 {
+        margin-top: 0;
+    }
+}
+
+.hero {
+//    z-index: 2;
+}
+
+.footer {
+    color: $off-white;
+    .flex1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+    }
+    a {
+        text-decoration: none;
+        color: $off-white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.icon-row {
+    @extend .flex;
+}
+
+.icon-row__box {
+    @extend .flex;
+    
+    position: relative;
+    width: $figureSize + 50px;
+//    height: 130px;
+    margin: 0px 20px;
+    
+    &__graphic {
+        margin: 0 auto;
+        padding: 10px;
+        width:  $figureSize;
+        height: $figureSize;
+    }
+    figcaption {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
+}
+
+
+.mail {
+//    @include vertical-align();
+    display: flex;
+//    vertical-align: middle;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.form__button {
+	background-color:#44c767;
+	border-radius: 0 10px 10px 0;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    height: 50px;
+}
+.form__button:hover {
+	background-color:#5cbf2a;
+}
+.form__button:active {
+	position:relative;
+	top:1px;
+}
+
+.form__input {
+    background: url("../res/mail.png") no-repeat scroll 15px center #fff;
+    background-color: $off-white;
+    height: 50px;
+    width: 800px;
+    padding: 0 0 0 40px;
+    border-radius: 10px 0 0 10px;
+    font-family: "Varela Round";
+    font-size: 2em;
+}

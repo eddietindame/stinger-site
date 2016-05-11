@@ -1,0 +1,21 @@
+doctype strict
+html(lang="en", class="no-js")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Stinger
+        //    link(rel="stylesheet", href="bower_components/foundation/css/foundation.css")
+    link(rel="stylesheet", href="css/app.css")
+    script(src="bower_components/modernizr/modernizr.js")
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    
+  body
+    include jade/header
+    include jade/top
+    include jade/features
+    //include jade/video
+    include jade/info
+    include jade/contact
+    include jade/footer
+    
+    script(src="js/app.min.js")

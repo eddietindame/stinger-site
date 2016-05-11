@@ -1,0 +1,12 @@
+header#header.header
+    .wrapper.cf
+        //img(class="logo" src="../res/stinger_logo.svg", alt="Stinger Logo")
+        svg(id="logo" class="logo")
+            use(xlink:href="res/icons.svg#stinger_logo")
+            title Stinger Logo
+        nav
+            ul
+                li: a(href="#video") Video
+                li: a(href="#features") Features
+                li: a(href="#info") Info
+                li: a(href="#contact") Contact

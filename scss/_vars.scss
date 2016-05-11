@@ -1,0 +1,26 @@
+@mixin vertical-align() {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+$figureSize: 150px;
+
+//$top: #7cffb3;
+//$video: #313131;
+//$features: #4de57c;
+//$contact: #skyblue;
+//$info: #52a7fc;
+
+$info: #47b8e0;
+$video: #313131;
+$contact: #ff7473;
+$top: #ffc952;
+$features: #34314c;
+
+//$off-white: #f4f7f7;
+//$off-white: #FFFFF3;
+$off-white: #fffff5;
+//$off-white: #F8FAFF;
+
+
